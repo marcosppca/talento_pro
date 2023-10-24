@@ -1,0 +1,22 @@
+print('Bem vindo ao sistema de numeracao de hotel da TALENT PRO')
+i = 1
+andar = 1
+
+print('Escreva um código que imprima todos os números exceto o número 13.')
+
+for andar in range(20):
+  if andar != 13:
+   print('Andar ', andar + 1)
+
+print('Escreva mais um código que resolva o mesmo problema, mas dessa vez usando o laço de repetição while')
+while i < 21:
+  if i != 13:
+    print('Andar ', i)
+  i = i + 1
+
+i = 20
+print('Como desafio, imprima eles em ordem decrescente (20, 19, 18...)')
+while i > 0:
+  if i != 13:
+    print('Andar ', i)
+  i = i -1
