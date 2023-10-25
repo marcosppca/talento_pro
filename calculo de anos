@@ -1,0 +1,24 @@
+numeroCorreto = False
+nome = input("Insira nome completo")
+print("Insira o ano de nascimento(1922-2022)")
+
+while (numeroCorreto == False):
+
+   try:
+
+       numero = int(input())
+
+       if (numero > 1922) and (numero < 2023):
+
+           numeroCorreto = True
+
+           print("Nome completo:", nome)
+           print("Idade em anos :", 2022-numero)
+
+       else :
+
+           print("Você digitou errado")
+
+   except:
+
+       print("Caracter inválido, por favor digite o ano de nascimento corretamente")
