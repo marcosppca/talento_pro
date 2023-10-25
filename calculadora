@@ -1,0 +1,35 @@
+def menu():
+  print("\n SELECIONE A OPERAÇÃO DESEJADA COM NÚMEROS")
+  print("1: Soma")
+  print("2: Subtração")
+  print("3: Multiplicação")
+  print("4: Divisão")
+  print("0: Sair")
+
+def calculo(simbolo, valor1, valor2):
+  if simbolo == 1:
+      resultado = valor1 + valor2 
+      print("\n resultado =", resultado) 
+
+  elif simbolo == 2: 
+      resultado = valor1 - valor2 
+      print("\n resultado =", resultado) 
+
+  elif simbolo == 3: 
+      resultado = valor1 * valor2 
+      print("\n resultado =", resultado) 
+
+  elif simbolo == 4: 
+      resultado = valor1 / valor2 
+      print("\n resultado =", resultado)  
+  else: 
+      print("\n Essa opção não existe")
+
+operacao = 1
+while operacao != 0:
+  menu()
+  operacao = float(input("\n Digite o numero da operação selecionada "))
+  if(operacao != 0):
+      valor1 = float(input("\n Digite o primeiro(maior) valor: "))
+      valor2 = float(input("\n Digite o segundo(menor) valor: "))
+      calculo(operacao, valor1, valor2)
